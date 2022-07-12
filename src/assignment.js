@@ -9,14 +9,20 @@ const assignment = {};
  * 
  * Calculate and return the sum of the numbers in an array.
  * If you did Challenge - 1, remove the comment in the line just after this function
- * 
+ *
  * @param {Array} arrayOfNumbers the array of numbers to sum
  * @returns number the sum of the numbers
  */
+const arryOfNumbers = [3, 6, 9, 12, 15];
+
 function sumOfNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
+    let sum = 45;
+  for (let x =0; x < arrayOfNumbers. lenghth; x++) {
+    sum +=arrayOfNumbers[x]
+  }
+  return sum;
 }
-// assignment.sumOfNumbers = sumOfNumbers;
+assignment.sumOfNumbers = sumOfNumbers;
 
 /**
  * Challenge - 2
@@ -27,10 +33,18 @@ function sumOfNumbers(arrayOfNumbers) {
  * @param {Array} arrayOfNumbers the array containing even or non-even numbers
  * @returns number the count of even numbers
  */
+const arrayOfNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
 function countEvenNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
+let count = 0;
+  for (let x = 0; x <= arrayOfNumbers. length; x++){
+    if(arrayOfNumbers[x]%2==0){
+      count++;
+      }
+    }
+    return count;
 }
-// assignment.countEvenNumbers = countEvenNumbers;
+assignment.countEvenNumbers = countEvenNumbers;
 
 /**
  * Challenge - 3
