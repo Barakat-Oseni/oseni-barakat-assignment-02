@@ -13,13 +13,17 @@ const assignment = {};
  * @param {Array} arrayOfNumbers the array of numbers to sum
  * @returns number the sum of the numbers
  */
-const arryOfNumbers = [3, 6, 9, 12, 15];
-
 function sumOfNumbers(arrayOfNumbers) {
-    let sum = 45;
-  for (let x =0; x < arrayOfNumbers. lenghth; x++) {
-    sum +=arrayOfNumbers[x]
-  }
+    let sum = 0;
+    for (let counter = 0 ; counter < arrayOfNumbers.length ; counter++) {
+      if (isNaN(arrayOfNumbers[counter])){
+        continue;
+      }
+      else {
+        arrayOfNumbers[counter] = arrayOfNumbers[counter];
+      }
+      sum += arrayOfNumbers[counter];
+    }
   return sum;
 }
 assignment.sumOfNumbers = sumOfNumbers;
